@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Food Poems!</title>
   <script src="https://kit.fontawesome.com/37d6505749.js" crossorigin="anonymous"></script>
 
 </head>
@@ -28,12 +28,32 @@
     width: fit-content;
     opacity: 0;
     border-radius: 5px;
-    border: 3px solid rgb(245, 128, 128);
     padding: 0px 5px;
     font-size: 1.5rem;
 
   }
+  .watermark {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    font-size: 18px;
+    font-family: Arial, sans-serif;
+    color: rgba(255, 255, 255, 0.5); /* Semi-transparent black color */
+  }
 
+    /* Position the subheader at the bottom of the screen */
+  .subheader {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      font-family: Arial, sans-serif;
+      color: rgba(255, 255, 255, 1); /* white */
+      padding: 20px 0; /* Vertical padding */
+      text-align: center;
+      font-size: 48px;
+      font-weight: bold;
+  }
 
   svg path {
     cursor: pointer;
@@ -1578,9 +1598,10 @@
       }
       const classes = e.className.baseVal.replace(/ /g, '.')
       document.querySelectorAll(`.${classes}`).forEach(country => {
-        country.style.fill = "pink"
+        country.style.fill = "gray"
       })
       document.getElementById("name").style.opacity = 1
+      document.getElementById("name").style.fontFamily = "Helvetica, sans-serif"
 
       document.getElementById("namep").innerText = e.id
     })
@@ -1601,5 +1622,7 @@
 
 
 </script>
+  <div class="watermark">made by nikhil kamath</div>
+  <div class="subheader">food poetry</div>
 
 </html>
