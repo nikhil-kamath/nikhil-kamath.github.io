@@ -78,7 +78,7 @@
 
       document.getElementById("country-header").innerText = key;
       // Fetch the poem content based on the key
-      fetch(`./poems.json`)
+      fetch(`./poem.json`)
         .then((response) => response.json())
         .then((data) => {
           const poem = data[key];
@@ -90,6 +90,12 @@
     </script>
   </body>
 
+
+
   <div class="watermark">made by nikhil kamath</div>
+  <meta http-equiv='cache-control' content='no-cache'>
+    <meta http-equiv='expires' content='0'>
+    <meta http-equiv='pragma' content='no-cache'>
 
 </html>
+
