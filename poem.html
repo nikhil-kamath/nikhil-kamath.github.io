@@ -62,7 +62,7 @@
         fetch(`./poems.json`)
             .then(response => response.json())
             .then(data => {
-                const poem = data['usa']
+                const poem = data[key];
                 document.getElementById('poemTitle').innerText = poem.title;
                 document.getElementById('poemBody').innerText = poem.body;
             })

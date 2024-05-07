@@ -19,10 +19,6 @@
     "title": "Angola poem!!",
     "body": "Angola peom Angola pem"
   },
-  "Antigua & Deps":{
-    "title": "Antigua & Deps poem!!",
-    "body": "Antigua & Deps peom Antigua & Deps pem"
-  },
   "Argentina":{
     "title": "Argentina poem!!",
     "body": "Argentina peom Argentina pem"
@@ -83,10 +79,6 @@
     "title": "Bolivia poem!!",
     "body": "Bolivia peom Bolivia pem"
   },
-  "Bosnia Herzegovina":{
-    "title": "Bosnia Herzegovina poem!!",
-    "body": "Bosnia Herzegovina peom Bosnia Herzegovina pem"
-  },
   "Botswana":{
     "title": "Botswana poem!!",
     "body": "Botswana peom Botswana pem"
@@ -123,14 +115,6 @@
     "title": "Canada poem!!",
     "body": "Canada peom Canada pem"
   },
-  "Cape Verde":{
-    "title": "Cape Verde poem!!",
-    "body": "Cape Verde peom Cape Verde pem"
-  },
-  "Central African Rep":{
-    "title": "Central African Rep poem!!",
-    "body": "Central African Rep peom Central African Rep pem"
-  },
   "Chad":{
     "title": "Chad poem!!",
     "body": "Chad peom Chad pem"
@@ -154,10 +138,6 @@
   "Congo":{
     "title": "Congo poem!!",
     "body": "Congo peom Congo pem"
-  },
-  "Congo {Democratic Rep}":{
-    "title": "Congo {Democratic Rep} poem!!",
-    "body": "Congo {Democratic Rep} peom Congo {Democratic Rep} pem"
   },
   "Costa Rica":{
     "title": "Costa Rica poem!!",
@@ -315,7 +295,7 @@
     "title": "Iraq poem!!",
     "body": "Iraq peom Iraq pem"
   },
-  "Ireland {Republic}":{
+  "Ireland":{
     "title": "Ireland {Republic} poem!!",
     "body": "Ireland {Republic} peom Ireland {Republic} pem"
   },
@@ -483,7 +463,7 @@
     "title": "Mozambique poem!!",
     "body": "Mozambique peom Mozambique pem"
   },
-  "Myanmar, {Burma}":{
+  "Myanmar":{
     "title": "Myanmar, {Burma} poem!!",
     "body": "Myanmar, {Burma} peom Myanmar, {Burma} pem"
   },
@@ -571,7 +551,7 @@
     "title": "Romania poem!!",
     "body": "Romania peom Romania pem"
   },
-  "Russian Federation":{
+  "Russia":{
     "title": "Russian Federation poem!!",
     "body": "Russian Federation peom Russian Federation pem"
   },
@@ -587,7 +567,7 @@
     "title": "St Lucia poem!!",
     "body": "St Lucia peom St Lucia pem"
   },
-  "Saint Vincent & the Grenadines":{
+  "Saint Vincent and the Grenadines":{
     "title": "Saint Vincent & the Grenadines poem!!",
     "body": "Saint Vincent & the Grenadines peom Saint Vincent & the Grenadines pem"
   },
@@ -599,7 +579,7 @@
     "title": "San Marino poem!!",
     "body": "San Marino peom San Marino pem"
   },
-  "Sao Tome & Principe":{
+  "Sao Tome and Principe":{
     "title": "Sao Tome & Principe poem!!",
     "body": "Sao Tome & Principe peom Sao Tome & Principe pem"
   },
@@ -707,7 +687,7 @@
     "title": "Tonga poem!!",
     "body": "Tonga peom Tonga pem"
   },
-  "Trinidad & Tobago":{
+  "Trinidad and Tobago":{
     "title": "Trinidad & Tobago poem!!",
     "body": "Trinidad & Tobago peom Trinidad & Tobago pem"
   },
