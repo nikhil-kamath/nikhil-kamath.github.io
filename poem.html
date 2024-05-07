@@ -51,8 +51,8 @@
             .then(response => response.json())
             .then(data => {
                 const poem = data['usa']
-                document.getElementById('poemTitle').innerText = data.title;
-                document.getElementById('poemBody').innerText = "hello";
+                document.getElementById('poemTitle').innerText = poem.title;
+                document.getElementById('poemBody').innerText = poem.body;
             })
             .catch(error => console.error('Error:', error));
     </script>
