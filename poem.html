@@ -1,73 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Poetry Page</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-        }
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
 
-        h1 {
-            font-family: Arial, sans-serif;
-            font-size: 32px;
-            text-align: center;
-            margin-bottom: 20px;
-        }
+      h1 {
+        font-family: Arial, sans-serif;
+        font-size: 32px;
+        text-align: center;
+        margin-bottom: 20px;
+      }
 
-        p {
-            font-family: Arial, sans-serif;
-            font-size: 18px;
-            text-align: center;
-            line-height: 1.5;
-            max-width: 600px;
-            margin: 0 auto;
-        }
+      p {
+        font-family: Arial, sans-serif;
+        font-size: 18px;
+        text-align: center;
+        line-height: 1.5;
+        max-width: 600px;
+        margin: 0 auto;
+      }
 
-        .back-button {
-            position: absolute;
-            top: 10px;
-            left: 10px;
-            cursor: pointer;
-            font-family: Arial, sans-serif;
-            font-size: 16px;
-            text-decoration: none;
-            color: #333;
-        }
+      .back-button {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        cursor: pointer;
+        font-family: Arial, sans-serif;
+        font-size: 16px;
+        text-decoration: none;
+        color: #333;
+      }
+
+      .watermark {
+        position: fixed;
+        bottom: 10px;
+        right: 10px;
+        font-size: 18px;
+        font-family: Arial, sans-serif;
+        color: rgba(0, 0, 0, 0.5); /* Semi-transparent black color */
+      }
+
+      .country-header {
+        position: fixed;
+        top: 10px;
+        right: 10px;
+        font-size: 36;
+        font-family: Arial, sans-serif;
+        color: rgba(0, 0, 0, 1.0);
+      }
+
     </style>
-</head>
+  </head>
 
-<body>
+  <div class="country-header" id="country-header">loading</div>
+
+  <body>
     <a href="index.html" class="back-button">back</a>
     <h1 id="poemTitle">Poem Title</h1>
-    <p id="poemBody">
-        Loading...
-    </p>
+    <p id="poemBody">Loading...</p>
 
     <script>
-        // Get the key from the URL
-        const urlParams = new URLSearchParams(window.location.search);
-        const key = urlParams.get('key');
+      // Get the key from the URL
+      const urlParams = new URLSearchParams(window.location.search);
+      const key = urlParams.get("key");
 
-        // Fetch the poem content based on the key
-        fetch(`./poems.json`)
-            .then(response => response.json())
-            .then(data => {
-                const poem = data[key];
-                document.getElementById('poemTitle').innerText = poem.title;
-                document.getElementById('poemBody').innerText = poem.body;
-            })
-            .catch(error => console.error('Error:', error));
+      document.getElementById("country-header").innerText = key;
+      // Fetch the poem content based on the key
+      fetch(`./poems.json`)
+        .then((response) => response.json())
+        .then((data) => {
+          const poem = data[key];
+          document.getElementById("poemTitle").innerText = poem.title;
+          document.getElementById("poemBody").innerText = poem.body;
+          document.getElementById("poemBody").innerText = poem.body;
+        })
+        .catch((error) => console.error("Error:", error));
     </script>
-</body>
+  </body>
+
+  <div class="watermark">made by nikhil kamath</div>
 
 </html>
